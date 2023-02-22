@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação do console</title>
+</head>
+<body>
+
+    <h1>Clique no botão para exibir a caixa de confirmação</h1>
+    <input type="button" value="Clique para exibir a soma" onclick="f1()">
+    <h1 id="resultado"></h1>
+
+    <script>
+
+        function f1() {
+            var x;
+            var r = confirm("escolha um valor:");
+
+            if (r === true) {
+                x = "Aceitado"
+            }
+            else {
+                x = "Cancelado"
+            }
+
+            document.getElementById("resultado").innerHTML = x;
+            console.log(x);
+            
+        }
+
+    </script>
+</body>
+</html>
